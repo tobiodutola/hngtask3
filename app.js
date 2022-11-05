@@ -12,7 +12,7 @@ app.use(cors());
 app.options('*', cors());
 
 //use helmet
-app.use(helmet.crossOriginResourcePolicy({ policy: 'cross-origin' }));
+//app.use(helmet.crossOriginResourcePolicy({ policy: 'cross-origin' }));
 app.use(express.json({ limit: '10kb' }));
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 
